@@ -1,3 +1,10 @@
+题干：
+<img width="805" height="120" alt="image" src="https://github.com/user-attachments/assets/c75a2bb5-63a7-4b9a-9c66-675e1d18cb89" />
+<img width="787" height="74" alt="image" src="https://github.com/user-attachments/assets/ce0a53e1-07ae-4729-9755-3b3fa8c5318a" />
+<img width="688" height="86" alt="image" src="https://github.com/user-attachments/assets/09eb3924-196a-4376-b1d2-4a785e2030cf" />
+<img width="762" height="162" alt="image" src="https://github.com/user-attachments/assets/6d4b155d-3af8-4112-a77f-dd32b9a4df22" />
+
+
 
 Core ：将已知进行变换，只不过“变换”，指最基础的多项式加括号方法，so，level高的题目很可能涉及含数学公式的变换
 <img width="775" height="181" alt="image" src="https://github.com/user-attachments/assets/295c5ed6-5256-4989-85ee-b759c42fb658" />
