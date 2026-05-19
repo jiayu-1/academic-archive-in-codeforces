@@ -1,8 +1,13 @@
 题干：
+
 <img width="805" height="120" alt="image" src="https://github.com/user-attachments/assets/c75a2bb5-63a7-4b9a-9c66-675e1d18cb89" />
+
 <img width="787" height="74" alt="image" src="https://github.com/user-attachments/assets/ce0a53e1-07ae-4729-9755-3b3fa8c5318a" />
 <img width="688" height="86" alt="image" src="https://github.com/user-attachments/assets/09eb3924-196a-4376-b1d2-4a785e2030cf" />
 <img width="762" height="162" alt="image" src="https://github.com/user-attachments/assets/6d4b155d-3af8-4112-a77f-dd32b9a4df22" />
+
+写题真实step：
+理解题意--> 看样例 --> 根据样例找思路、找规律
 
 
 
