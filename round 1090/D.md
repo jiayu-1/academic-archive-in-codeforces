@@ -22,5 +22,29 @@ an =c * d
 a1 =x *y
 a2 =y * b
 所以 gcd(a1,a2)=y
+且 x y b都是素数
 
+构造素数的模板如下：
+埃拉托斯特尼筛法 模板，常用于快速预处理不超过 limit 的所有素数
+在数据范围 ≤ 1e7 时可以
+
+'''
+vector<int> primes;//全局
+// 生成所有不超过 limit 的素数，存到 primes 中
+
+void init_primes(int limit) {
+    vector<bool> is_prime(limit + 1, true);
+    is_prime[0] = is_prime[1] = false;
+// 0 和 1 不是素数，设为 false
+    for (int i = 2; i <= limit; ++i) {
+        if (is_prime[i]) {
+            primes.push_back(i);
+            if (i * 1LL * i <= limit) {
+                for (int j = i * i; j <= limit; j += i)
+                    is_prime[j] = false;
+            }
+        }
+    }
+}
+'''
 
