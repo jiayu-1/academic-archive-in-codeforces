@@ -14,7 +14,8 @@ a1 >a2 <a3 <a4 <a5>a6 <a7<a8>a9，即发现原始情况下的数组，递减只�
 
 
 '''
-    int n;cin>>n;
+    int n;
+    cin>>n;
     // if(n==1){
     //     cout<<n<<endl;
     //     return;
