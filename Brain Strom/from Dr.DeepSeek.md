@@ -72,8 +72,62 @@ A：
 
 
 
+```
+#include <bits/stdc++.h>
+using namespace std;
 
+void solve() {
+    int n;
+    cin >> n;
+    vector<long long> a(n+1), b(n+1);
+    long long sum_a = 0, sum_b = 0;
+    for (int i = 1; i <= n; ++i) {
+        cin >> a[i];
+        sum_a += a[i];
+    }
+    for (int i = 1; i <= n; ++i) {
+        cin >> b[i];
+        sum_b += b[i];
+    }
+    
+    if (sum_a != sum_b) {
+        cout << "NO\n";
+        return;
+    }
+    
+    // 从小到大贪心推流
+    for (int i = 1; i <= n; ++i) {
+        if (a[i] < b[i]) {
+            cout << "NO\n";
+            return;
+        }
+        long long extra = a[i] - b[i];
+        a[i] = b[i];
+        if (extra > 0) {
+            // 寻找一个后继（倍数）把多余的值传出去
+            // 选择 2*i 作为主要传递对象（如果存在）
+            if (2*i <= n) {
+                a[2*i] += extra;
+            } else {
+                // 没有后继，但还有多余的值，无法传递，失败
+                cout << "NO\n";
+                return;
+            }
+        }
+    }
+}
 
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
+```
 
 
 
